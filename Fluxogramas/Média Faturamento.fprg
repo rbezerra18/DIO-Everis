@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rbeze"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-10 01:22:29 "/>
+        <attribute name="created" value="cmJlemU7Uk9CRVJUTy1ERUxMOzIwMjEtMDItMTA7IjAxOjE4OjEwICI7MjU4NQ=="/>
+        <attribute name="edited" value="cmJlemU7Uk9CRVJUTy1ERUxMOzIwMjEtMDItMTA7IjAxOjIyOjI5ICI7MTsyNjk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, media" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="media" expression="(janeiro + fevereiro + marco + abril) / 4"/>
+            <if expression="media &gt;= 5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! Sua m&#233;dia foi maior ou igual a R$ 5.000 e voc&#234; receber&#225; um abono de 10%!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua m&#233;dia foi menor que R$ 5.000 e voc&#234; receber&#225; um abono de 3%!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
